@@ -281,3 +281,5 @@ findhelp/media/
 !.envs/.local/
 
 .envs/.production/
+
+*.sqlite3
