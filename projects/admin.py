@@ -7,6 +7,7 @@ class WaiterInline(admin.TabularInline):
     readonly_fields = ('name', 'email', 'message',)
     fields = ('name', 'email', 'message',)
 
+
 @admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
     inlines = [WaiterInline]
@@ -14,5 +15,6 @@ class ProjectAdmin(admin.ModelAdmin):
 
     def waiters(self, obj):
         return str(len(obj.project.all()))
+
 
 admin.site.register(Waiter)
