@@ -14,3 +14,6 @@ class Waiter(models.Model):
     email = models.EmailField()
     project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name="project")
     message = models.TextField(null=True)
+
+    def __str__(self):
+        return str(self.email)
