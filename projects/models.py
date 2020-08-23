@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 
 class Project(models.Model):
     title = models.CharField(max_length=100, blank=False)
@@ -8,6 +7,10 @@ class Project(models.Model):
 
     def __str__(self):
         return str(self.title)
-    
-    
+
+
 class Waiter(models.Model):
+    name = models.CharField(max_length=100, null=True)
+    email = models.EmailField()
+    project = models.ForeignKey(Project, related_name="project")
+    message = models.TextField(null=True)
