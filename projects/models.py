@@ -12,5 +12,5 @@ class Project(models.Model):
 class Waiter(models.Model):
     name = models.CharField(max_length=100, null=True)
     email = models.EmailField()
-    project = models.ForeignKey(Project, related_name="project")
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name="project")
     message = models.TextField(null=True)
