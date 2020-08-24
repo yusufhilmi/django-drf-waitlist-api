@@ -11,6 +11,7 @@ waiter_create = views.WaiterViewSet.as_view({
 
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('', waiter_create, name='waiter-create'),
+    path('viewset/', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
