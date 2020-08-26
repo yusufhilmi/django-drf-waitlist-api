@@ -15,5 +15,10 @@ class Waiter(models.Model):
     project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name="project")
     message = models.TextField(null=True)
 
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-created_at']
+
     def __str__(self):
         return str(self.email)
