@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h5>{{project.title}}</h5>
+<h2>
+    {{numberofwaiters}}
+</h2>
+{% if waiters %}
+{% for waiter in waiters %}
+
+{{waiter.name}}
+{{waiter.email}}
+{{waiter.message}}
+{{waiter.created_at}}
+<br>
+<br>
+{% endfor %}
+{% endif %}
+
+{% endblock %}
