@@ -4,8 +4,8 @@ from projects.models import Project, Waiter
 
 class WaiterInline(admin.TabularInline):
     model = Waiter
-    readonly_fields = ('name', 'email', 'message',)
-    fields = ('name', 'email', 'message',)
+    readonly_fields = ('name', 'email', 'message', 'created_at')
+    fields = ('name', 'email', 'message', 'created_at')
 
 
 @admin.register(Project)
