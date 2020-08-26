@@ -1,5 +1,5 @@
 from django.views.generic import ListView
-from django.shortcuts import render
+from django.contrib.auth.mixins import PermissionRequiredMixin
 
 from rest_framework import viewsets
 
@@ -12,7 +12,8 @@ class WaiterViewSet(viewsets.ModelViewSet):
     serializer_class = WaiterSerializer
 
 
-class ProjectStatusView(ListView):
+class ProjectStatusView(PermissionRequiredMixin, ListView):
+    permission_required = 'users.is_admin'
     template_name = 'projects/project_status.html'
     context_object_name = 'waiters'
 
