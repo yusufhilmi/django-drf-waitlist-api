@@ -5,12 +5,22 @@
 {{project.title}}
 {% endblock %}
 
-{% block content %}
 
-<h5>{{project.title}}</h5>
-<h2>
-    {{numberofwaiters}}
-</h2>
+
+{% block content %}
+<div class="text-center m-5 align-middle">
+
+    <h3 class="display-4">{{project.title}}</h3>
+
+    <div class="mt-5">
+
+        <h1 class="display-1">
+            {{numberofwaiters}}
+        </h1>
+    </div>
+</div>
+
+{% endblock %}
 {% if waiters %}
 {% for waiter in waiters %}
 
@@ -22,5 +32,3 @@
 <br>
 {% endfor %}
 {% endif %}
-
-{% endblock %}
