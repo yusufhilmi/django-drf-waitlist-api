@@ -12,7 +12,9 @@ waiter_create = views.WaiterViewSet.as_view({
 
 urlpatterns = [
     path('', waiter_create, name='waiter-create'),
-    path('project/<str:title>/', views.ProjectStatusView.as_view(), name='project-status'),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     # path('viewset/', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+
+    # path below is not an API view it is an experimental template view
+    path('project/<str:title>/', views.ProjectStatusView.as_view(), name='project-status'),
 ]
