@@ -1,4 +1,4 @@
-# waitlist-api
+# Waitlist API
 
 Waitlist API is a REST API that allows startups and product makers like me to collect e-mail adresses and feedback.
 
