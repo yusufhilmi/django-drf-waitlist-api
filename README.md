@@ -37,8 +37,9 @@ python manage.py runserver
 
 ## Contact
 
-If you want to contact me you can reach me through [email](mailto:yusufhilmicr@gmail.com)
-Or twitter [@yusufhilmi_](https://twitter.com/yusufhilmi_)
+If you want to contact me you can reach me through [email](mailto:yusufhilmicr@gmail.com).
+
+Find me on twitter [@yusufhilmi_](https://twitter.com/yusufhilmi_).
 
 ## License
 This project uses the following license: [MIT](https://github.com/yusufhilmi/waitlist-api/blob/master/LICENSE).
