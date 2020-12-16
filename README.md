@@ -1,7 +1,5 @@
 # waitlist-api
 
-<!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
-
 Waitlist API is a REST API that allows startups and product makers like me to collect e-mail adresses and feedback.
 
 There are paid or free tools to tackle the same issue but I wanted a customizable way to solve it. So, I built it.
@@ -11,13 +9,11 @@ There are paid or free tools to tackle the same issue but I wanted a customizabl
 Before you begin, ensure you have met the following requirements:
 * You have installed the latest version of Python3
 * You have a virtualenv setup on your computer
-* You have read `<guide/link/documentation_related_to_project>`.
 
-## Installing <project_name>
+## Installing waitlist-api
 
-To install <project_name>, follow these steps:
+To install waitlist-api, follow these steps:
 
-Linux and macOS:
 ```
 pip install django
 pip install djangorestframework
